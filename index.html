@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@300;700&family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,700;1,100;1,300&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+
+        <input class="display">
+        <button class="grayButton" onclick="limpaTela()"> AC </button>
+        <button class="grayButton" onclick="inverterNumero()"> +/- </button>
+        <button class="blueButton" onclick="adicionarCaracter('/')"> / </button>
+        <button class="blueButton" onclick="adicionarCaracter('*')"> * </button>
+        <button class="blackButton" onclick="adicionarCaracter('7')"> 7 </button>
+        <button class="blackButton" onclick="adicionarCaracter('8')"> 8 </button>
+        <button class="blackButton" onclick="adicionarCaracter('9')"> 9 </button>
+        <button class="blueButton" onclick="adicionarCaracter('-')"> - </button>
+        <button class="blackButton" onclick="adicionarCaracter('4')"> 4 </button>
+        <button class="blackButton" onclick="adicionarCaracter('5')"> 5 </button>
+        <button class="blackButton" onclick="adicionarCaracter('6')"> 6 </button>
+        <button class="blueButton" onclick="adicionarCaracter('+')"> + </button>
+        <button class="blackButton" onclick="adicionarCaracter('1')"> 1 </button>
+        <button class="blackButton" onclick="adicionarCaracter('1')"> 2 </button>
+        <button class="blackButton" onclick="adicionarCaracter('3')"> 3 </button>
+        <button class="iconButton igual" onclick="calcular()"> = </button>
+        <button class="blackButton zero" onclick="adicionarCaracter('0')"> 0 </button>
+        <button class="blackButton" onclick="adicionarCaracter('.')"> . </button>
+
+
+    </main>
+
+
+    <script>
+
+        function adicionarCaracter(num){
+            const valorDisplay = document.querySelector(".display").value
+
+            document.querySelector(".display").value = valorDisplay + num
+
+        }
+
+        function limpaTela(){
+            document.querySelector(".display").value = ""
+        }
+
+        function calcular(){
+            const valorDisplay = document.querySelector(".display").value
+
+            //eval resolve contas em uma string de acordo com o operador + / * - 
+            document.querySelector(".display").value = eval(valorDisplay) 
+
+        }
+
+        function inverterNumero(){
+            const valorDisplay = document.querySelector(".display").value
+            document.querySelector(".display").value = valorDisplay * -1
+        }
+
+
+    </script>
+</body>
+
+</html>
