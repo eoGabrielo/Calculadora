@@ -1,4 +1,5 @@
-#Criação de uma Calculadora em JavaScript<br>
+<h1>Criação de uma Calculadora em JavaScript</h1>
+<br>
 Utilizando querySelector<br>
 O querySelector é um método em JavaScript que permite selecionar elementos HTML com base em seletores CSS. É uma poderosa ferramenta para manipular e interagir com elementos em uma página da web. Por exemplo, podemos usar o querySelector para selecionar o elemento de exibição da calculadora, onde os resultados serão mostrados, bem como os botões numéricos e operadores. <br>
 Evento onClick<br>
