@@ -40,5 +40,5 @@ function inverterNumero(){
 }
 ```
 
-O código JavaScript utiliza o método `querySelector` para selecionar elementos HTML e manipular dinamicamente o conteúdo do display. A função `eval` é utilizada para avaliar expressões matemáticas fornecidas pelo usuário. Recomenda-se cautela ao usar `eval` para evitar potenciais vulnerabilidades de segurança.
+O código JavaScript utiliza o método `querySelector` para selecionar elementos HTML e manipular dinamicamente o conteúdo do display. A função `eval` é utilizada para avaliar expressões matemáticas fornecidas pelo usuário.
 
