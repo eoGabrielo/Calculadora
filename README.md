@@ -12,7 +12,6 @@ Este projeto apresenta uma calculadora simples desenvolvida em JavaScript, HTML 
 - **Adição de Caracteres:** Clique nos botões numerados para adicionar os dígitos desejados.
 - **Operações:** Utilize os botões de operações para adicionar operadores à expressão.
 - **Limpar Tela:** O botão "AC" limpa a tela, reiniciando a expressão.
-- **Inverter Número:** O botão "+/-" inverte o sinal do número atual.
 - **Calcular:** O botão "=" realiza o cálculo da expressão matemática e exibe o resultado.
 
 ## Detalhes Técnicos
